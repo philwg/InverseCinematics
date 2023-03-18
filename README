@@ -1,0 +1,24 @@
+Ce programme présente un bras articulé qui met en oeuvre la cinématique inverse.
+
+J'ai préféré transformer le programme fourni en C++ et le ré-écrire avec la
+bibliothèque Armadillo. En effet, celle-ci contient une fonction de calcul de
+pseudo-inverse très pratique pour notre propos. Je fournis un makefile adapté.
+Toutefois, sous linux, il faut s'assurer d'avoir les dépendances d'Armadillo : 
+Lapack et Blas installées.
+
+Les contrôles sont très limités et intuitifs :
+
+	le clic gauche : 		Amène l'extrémité du bras à l'endroit cliqué si sa
+							longueur le permet.
+	
+	clic-gauche maintenu : 	l'extémité suit la souris (même limite).
+
+	'i'	: 					Réinitialise le bras à sa position de départ
+							(que j'ai préférée verticale).
+	
+	<- & -> :				Donner une cible à l'extrémité par incrément
+							horizontal ...
+	
+	up & down :				... même chose en vertical
+
+	'q'	: 					Quitter l'application.
